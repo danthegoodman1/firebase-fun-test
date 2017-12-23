@@ -108,10 +108,11 @@
               var templi = document.createElement('li')
               var childNameInput = document.getElementById('searchForNameINPT').value;
                 if(nameSnap.child('name').val() == childNameInput){
-                  templi.innerText = nameSnap.child('name').val();
+                  templi.innerText = "The base child " + nameSnap.key + " has a child, name: " + nameSnap.child('name').val();
                   templi.id = nameSnap.key;
                   childList.appendChild(templi)
-                  console.log(nameSnap.child("name").val());
+                  // console.log(nameSnap.key, ":", nameSnap.child("name").val());
+                  // document.write(nameSnap.key);
                 }
             });
         });
