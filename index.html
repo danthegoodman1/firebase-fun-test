@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Web-App</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+</head>
+<body>
+
+    <h1>Here is the live DB:</h1>
+
+    <pre id="object"></pre>
+
+    <h2>And here is what people are adding:</h2>
+
+    <ul id="dataList">
+
+    </ul>
+
+    <h2>This area will add stupid list items, so add them</h2>
+    Item: <input type='text' id="valueInput"/><br />
+    <button id="addToDB">Add to DB</button>
+
+    <h3>This is some test pulling of data from the DB:</h3>
+    <p id="someP"></p>
+
+    <h3>Here is some more pulled data:</h3>
+    <p id="someOtherP"></p>
+
+
+    <h3>Use this section to generate random children with a nested name: _</h3>
+    <input id="generateInput"/><br />
+    <button id="generateButton">Generate</button>
+
+
+    <h3>Search for the unknown children with name: </h3>
+    <input id="searchForNameINPT"/>search here<br />
+    <button id="searchForNameBTN">Search</button>
+    <h4 id="childrenTitle"></h4>
+    <ul id="nameList">
+
+    </ul>
+
+
+    <h1>The 'Not Done Yet' Section:</h1>
+
+    <h3>This area will send two numbers to a Google Cloud Functions backend, and multiple the numbers, returning the result here</h3>
+    First Number: <input type="number" id="firstNumber">
+    Second Number: <input type="number" id="secondNumber"><br />
+    <button id="multiplyNumbers">Multiply</button>
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
